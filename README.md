@@ -4,8 +4,8 @@
 </p>
 <br>
 
-##Características de la pagina web de Time is Money: 
-###Ha sido estructurado con los lenguajes:
+##Características de la pagina web de Time is Money
+###Ha sido estructurado con los lenguajes
 - HTML5
 - Bootstrap 5
 - Javascript
