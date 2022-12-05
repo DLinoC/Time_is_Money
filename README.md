@@ -3,6 +3,7 @@
     <img src="https://github.com/DLinoC/Time_is_Money/blob/main/Time_is_Money.jpg" width="600px" height="400px">
 </p>
 ------------------------------------------------------------------------------------------------------
+
 ## Características de la pagina web de Time is Money:
 ### Ha sido estructurado con los lenguajes:
 - HTML5
