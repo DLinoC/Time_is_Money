@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>Lista - Empleados</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        img {
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-primary">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand" href="#">Logotipo</a>
+                    <a class="navbar-brand" href="formulario.html"><img src="https://blog.vimppo.com/wp-content/uploads/2019/11/timeismoney-1024x512.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,13 +41,13 @@
         <table class="table" id="tablita">
             <thead>
               <tr>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Apellido</th>
-                  <th scope="col">Correo Electrónico</th>
-                  <th scope="col">Data Link</th>
-                <th scope="col">Codigo</th>
-                <th scope="col">Sueldo Bruto</th>
-                <th scope="col">Sueldo Neto</th>
+                <th class="cabecera" scope="col">Nombre</th>
+                <th class="cabecera" scope="col">Apellido</th>
+                <th class="cabecera" scope="col">Correo Electrónico</th>
+                <th class="cabecera" scope="col">Data Link</th>
+                <th class="cabecera" scope="col">Codigo</th>
+                <th class="cabecera" scope="col">Sueldo Bruto</th>
+                <th class="cabecera" scope="col">Sueldo Neto</th>
               </tr>
             </thead>
             <tbody id="cuerpito">
