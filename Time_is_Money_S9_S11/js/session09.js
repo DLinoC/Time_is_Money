@@ -26,19 +26,15 @@ $(document).ready(function(){
         asistente: 1500,
     }
 
-    // const listaEmpleados
-    let listaEmpleados = []
-
-    let  copialista = []
+    let listaEmpleados = [],  copialista = []
 
 
     function guardarStorage() {
         localStorage.setItem('chacales', JSON.stringify(listaEmpleados))
     }
     function cargarStorage() {
-        if(!localStorage.getItem('chacales')) return;
+        if (!localStorage.getItem('chacales')) return;
         listaEmpleados = JSON.parse(localStorage.getItem('chacales'));
-        // console.log(listados);
     }
 
 
@@ -47,11 +43,9 @@ $(document).ready(function(){
                     
         if (!$("#form")[0].checkValidity()) {
             e.stopPropagation()
-            // NO se valida aún
             $('#form')[0].classList.add('was-validated')
 
         }else{
-            // Creamos una instancia
             const nom = $('#nombre')[0].value;
             const ape = $('#apellido')[0].value;
             const mail = $('#email')[0].value;
@@ -62,15 +56,12 @@ $(document).ready(function(){
             if(encontrados.length > 0) {
                 alert('coloca un correo disinto')
             } else {
-
-                // Se valido correctamente
                 $('#boton')[0].setAttribute('data-bs-toggle','modal');
 
                 const myModal = new bootstrap.Modal('#exampleModal', {
                     keyboard: false
                 })
                 let ids;
-                // CONTADOR
                 if(listaEmpleados.length <= 0) {
                      ids = 0;
                 } else {
@@ -78,22 +69,13 @@ $(document).ready(function(){
                        ids = listaEmpleados[index].id
                     }
                     ids++
-                    console.log(listaEmpleados[0])
                 }
-
-                // ids++
-                $('#form')[0].reset()
-                $('#boton')[0].removeAttribute('data-bs-toggle')
-                $('#form')[0].classList.remove('was-validated');
-
-                
+                $("#form")[0].reset(),$("#boton")[0].removeAttribute("data-bs-toggle"),$("#form")[0].classList.remove("was-validated");
                 const trabajador = new Empleado(nom, ape, mail, car);
                 trabajador.id = ids;
                 trabajador.bruto = trabajador.sueldoBruto();
                 trabajador.neto = trabajador.sueldoNeto()
                 listaEmpleados.push(trabajador);
-
-
                 guardarStorage()     
                 myModal.show()
             }
