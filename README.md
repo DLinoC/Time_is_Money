@@ -1,6 +1,6 @@
 <h1 align="center">Time is Money</h1>
 <p align="center">
-  <img src="img/Time_is_Money.jpg" width="600px" height="400px">
+  <img src="/Time_is_Money_S9_S11/img/Time_is_Money.jpg" width="600px" height="400px">
 </p>
 
 ## Características de la pagina web de Time is Money:
